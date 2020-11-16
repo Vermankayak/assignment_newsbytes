@@ -1,5 +1,7 @@
 # File Structure:
-.chalice folder contains config related and deployment related files
+<ul>
+<li>.chalice folder contains config related and deployment related files </li>
+    </ul>
 .gitignore contains file names that where ignored from being uploaded to github.
 README.md is this file which will contain full description of the Assignment.
 app.py contains code for the API's
