@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "name": "default-role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::130731233783:role/assignment_newsbytes-dev",
+      "role_name": "assignment_newsbytes-dev"
+    },
+    {
+      "name": "api_handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-south-1:130731233783:function:assignment_newsbytes-dev"
+    },
+    {
+      "name": "rest_api",
+      "resource_type": "rest_api",
+      "rest_api_id": "4utnah6h34",
+      "rest_api_url": "https://4utnah6h34.execute-api.ap-south-1.amazonaws.com/api/"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}
