@@ -24,7 +24,8 @@ API Gateway
 5. Finally these API's are deployed using 'chalice deploy' command.
 
 # API's
-# API endpoint: https://4utnah6h34.execute-api.ap-south-1.amazonaws.com/api/
+API endpoint: https://4utnah6h34.execute-api.ap-south-1.amazonaws.com/api/
+
 1. /encodeurl (POST)
 Request Parameters: (body Params)
 {
