@@ -1,20 +1,22 @@
 # File Structure:
-<ul>
+<ol>
 <li>.chalice folder contains config related and deployment related files </li>
-    </ul>
-.gitignore contains file names that where ignored from being uploaded to github.
-README.md is this file which will contain full description of the Assignment.
-app.py contains code for the API's
-requirements.txt contains modules that where installed for this system to work.
+<li>.gitignore contains file names that where ignored from being uploaded to github.</li>
+<li>README.md is this file which will contain full description of the Assignment.</li>
+<li>app.py contains code for the API's.</li>
+<li>requirements.txt contains modules that where installed for this system to work.</li>
+</ol>
 
 # Technology used
-AWS Chalice Framework
-AWS DynamoDB
-uuid module
-API Gateway
+<ol>
+<li>AWS Chalice Framework</li>
+<li>AWS DynamoDB</li>
+<li>uuid module</li>
+<li>API Gateway</li>
+</ol>
 
 # System Design
-
+<pre>
 1. URL in the form of https://xyz.com?query1=value1&query2=value2.....   ------------> given to /encodeurl API as a body parameter.
 2. /encodeurl API assigns a token or key to the URL and stores the Token as a Primary key in hashedURL Table created in DynamoDB.
 3. Other columns in the table are token URL (shortened Url which redirects to the main url when visited and counts a click when visited), actualURL-
@@ -24,6 +26,7 @@ API Gateway
 5. To get info about the number of clicks for any shortened url we have created /getinfo API, which again takes in the token and gives us-
 - the number of clicks along with information about the API.
 5. Finally these API's are deployed using 'chalice deploy' command.
+</pre>
 
 # API's
 API endpoint: https://4utnah6h34.execute-api.ap-south-1.amazonaws.com/api/
